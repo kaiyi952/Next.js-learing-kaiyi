@@ -1,9 +1,12 @@
-import { useState } from "react";
+import Counter from "@/components/counter";
 
-function Counter() {
-    const [count, setCount] = useState(0)
-    return (
-        <div>Counter</div>
-    )
+function CounterPage() {
+  return (
+      <section>
+          <h1 className="text-6xl mb-16">Page Content</h1>
+          <Counter/>
+    </section>
+  )
 }
-export default Counter;
+
+export default CounterPage;
