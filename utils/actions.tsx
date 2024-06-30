@@ -14,7 +14,6 @@ export const createUser = async (formData:FormData) => {
     // const rawData = Object.fromEntries(formData);
     const newUser: User = { firstName, lastName, id: Date.now().toString() };
     await saveUser(newUser);
-  
 };
 
 export const fetchUsers = async (): Promise<User[]> => {
